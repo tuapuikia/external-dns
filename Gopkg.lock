@@ -537,19 +537,19 @@
   revision = "ac974c61c2f990f4115b119354b5e0b47550e888"
 
 [[projects]]
-  name = "go.uber.org/atomic"
+  name = "github.com/uber-go/atomic"
   packages = ["."]
   revision = "1ea20fb1cbb1cc08cbd0d913a96dead89aa18289"
   version = "v1.3.2"
 
 [[projects]]
-  name = "go.uber.org/multierr"
+  name = "github.com/uber-go/multierr"
   packages = ["."]
   revision = "3c4937480c32f4c13a875a1829af76c98ca3d40a"
   version = "v1.1.0"
 
 [[projects]]
-  name = "go.uber.org/zap"
+  name = "github.com/uber-go/zap"
   packages = [
     ".",
     "buffer",
