@@ -18,6 +18,34 @@ FROM golang as builder
 WORKDIR /go/src/github.com/kubernetes-incubator/external-dns
 COPY . .
 RUN make dep
+RUN mkdir -p $GOPATH/src/golang.org/x/sys && \
+mkdir -p $GOPATH/src/golang.org/x/net && \
+mkdir -p $GOPATH/src/golang.org/x/time && \
+mkdir -p $GOPATH/src/golang.org/x/oauth2 && \
+mkdir -p $GOPATH/src/google.golang.org/genproto && \
+mkdir -p $GOPATH/src/golang.org/protobuf && \
+mkdir -p $GOPATH/src/github.com/golang/protobuf && \
+mkdir -p $GOPATH/src/golang.org/x/crypto && \
+mkdir -p $GOPATH/src/golang.org/x/text && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-sys/* $GOPATH/src/golang.org/x/sys/. && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-net/* $GOPATH/src/golang.org/x/net/. && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-time/* $GOPATH/src/golang.org/x/time/. && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-oauth2/* $GOPATH/src/golang.org/x/oauth2/. && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-google-go--genproto/* $GOPATH/src/google.golang.org/genproto/. && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-protobuf/* $GOPATH/src/golang.org/protobuf/. && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-protobuf/* $GOPATH/src/github.com/golang/protobuf/. && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-crypto/* $GOPATH/src/golang.org/x/crypto/. && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-text/* $GOPATH/src/golang.org/x/text/. && \
+mkdir -p $GOPATH/src/cloud.google.com/go && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-googleapis-google--cloud--go/* $GOPATH/src/cloud.google.com/go/. && \
+mkdir -p $GOPATH/src/google.golang.org/api && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-googleapis-google--api--go--client/* $GOPATH/src/google.golang.org/api/. && \
+mkdir -p $GOPATH/src/google.golang.org/appengine && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-appengine/* $GOPATH/src/google.golang.org/appengine/. && \
+mkdir -p $GOPATH/src/google.golang.org/genproto && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-google-go--genproto/. $GOPATH/src/google.golang.org/genproto/. && \
+mkdir -p $GOPATH/src/google.golang.org/grpc && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-grpc-grpc--go/* $GOPATH/src/google.golang.org/grpc/.
 RUN make test
 RUN make build
 

@@ -101,7 +101,7 @@ ignored = ["github.com/kubernetes/repo-infra/kazel"]
   version = "kubernetes-1.11.0"
 
 [[override]]
-  name = "golang.org/x/sys"
+  name = "github.com/golang/sys"
   revision = "13d03a9a82fba647c21a0ef8fba44a795d0f0835"
 
 [[override]]
@@ -109,7 +109,7 @@ ignored = ["github.com/kubernetes/repo-infra/kazel"]
   version = "1.0.2"
 
 [[override]]
-  name = "golang.org/x/net"
+  name = "github.com/golang/net"
   revision = "161cd47e91fd58ac17490ef4d742dc98bb4cf60e"
 
 [[constraint]]

@@ -2,7 +2,7 @@
 
 
 [[projects]]
-  name = "cloud.google.com/go"
+  name = "github.com/googleapis/google-cloud-go"
   packages = [
     "compute/metadata",
     "internal"
@@ -564,7 +564,7 @@
 
 [[projects]]
   branch = "master"
-  name = "golang.org/x/crypto"
+  name = "github.com/golang/crypto"
   packages = [
     "ed25519",
     "ed25519/internal/edwards25519",
@@ -573,7 +573,7 @@
   revision = "0709b304e793a5edb4a2c0145f281ecdc20838a4"
 
 [[projects]]
-  name = "golang.org/x/net"
+  name = "github.com/golang/net"
   packages = [
     "bpf",
     "context",
@@ -593,7 +593,7 @@
   revision = "161cd47e91fd58ac17490ef4d742dc98bb4cf60e"
 
 [[projects]]
-  name = "golang.org/x/oauth2"
+  name = "github.com/golang/oauth2"
   packages = [
     ".",
     "google",
@@ -604,7 +604,7 @@
   revision = "3c3a985cb79f52a3190fbc056984415ca6763d01"
 
 [[projects]]
-  name = "golang.org/x/sys"
+  name = "github.com/golang/sys"
   packages = [
     "unix",
     "windows"
@@ -612,7 +612,7 @@
   revision = "13d03a9a82fba647c21a0ef8fba44a795d0f0835"
 
 [[projects]]
-  name = "golang.org/x/text"
+  name = "github.com/golang/text"
   packages = [
     "collate",
     "collate/build",
@@ -634,12 +634,12 @@
 
 [[projects]]
   branch = "master"
-  name = "golang.org/x/time"
+  name = "github.com/golang/time"
   packages = ["rate"]
   revision = "fbb02b2291d28baffd63558aa44b4b56f178d650"
 
 [[projects]]
-  name = "google.golang.org/api"
+  name = "github.com/googleapis/google-api-go-client"
   packages = [
     "dns/v1",
     "gensupport",
@@ -649,7 +649,7 @@
   revision = "a0ff90edab763c86aa88f2b1eb4f3301b82f6336"
 
 [[projects]]
-  name = "google.golang.org/appengine"
+  name = "github.com/golang/appengine"
   packages = [
     ".",
     "internal",
@@ -666,7 +666,7 @@
 
 [[projects]]
   branch = "master"
-  name = "google.golang.org/genproto"
+  name = "github.com/google/go-genproto"
   packages = [
     "googleapis/api/annotations",
     "googleapis/rpc/status"
@@ -674,7 +674,7 @@
   revision = "11092d34479b07829b72e10713b159248caf5dad"
 
 [[projects]]
-  name = "google.golang.org/grpc"
+  name = "github.com/grpc/grpc-go"
   packages = [
     ".",
     "balancer",
