@@ -27,9 +27,9 @@ mkdir -p $GOPATH/src/golang.org/protobuf && \
 mkdir -p $GOPATH/src/github.com/golang/protobuf && \
 mkdir -p $GOPATH/src/golang.org/x/crypto && \
 mkdir -p $GOPATH/src/golang.org/x/text && \
-mkdir -p $GOPATH/src/github.com/uber-go/atomic && \
-mkdir -p $GOPATH/src/github.com/uber-go/multierr && \
-mkdir -p $GOPATH/src/github.com/uber-go/zap && \
+mkdir -p $GOPATH/src/go.uber.org/atomic && \
+mkdir -p $GOPATH/src/go.uber.org/multierr && \
+mkdir -p $GOPATH/src/go.uber.org/zap && \
 cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-sys/* $GOPATH/src/golang.org/x/sys/. && \
 cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-net/* $GOPATH/src/golang.org/x/net/. && \
 cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-time/* $GOPATH/src/golang.org/x/time/. && \
@@ -39,9 +39,9 @@ cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-protobuf/* $GOPATH/src/
 cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-protobuf/* $GOPATH/src/github.com/golang/protobuf/. && \
 cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-crypto/* $GOPATH/src/golang.org/x/crypto/. && \
 cp -rf $GOPATH/pkg/dep/sources/https---github.com-golang-text/* $GOPATH/src/golang.org/x/text/. && \
-cp -rf $GOPATH/pkg/dep/sources/https---github.com-uber--go-atomic/* $GOPATH/src/github.com/uber-go/atomic/. && \
-cp -rf $GOPATH/pkg/dep/sources/https---github.com-uber--go-multierr/* $GOPATH/src/github.com/uber-go/multierr/. && \
-cp -rf $GOPATH/pkg/dep/sources/https---github.com-uber--go-zap/* $GOPATH/src/github.com/uber-go/zap/. && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-uber--go-atomic/* $GOPATH/src/go.uber.org/atomic/. && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-uber--go-multierr/* $GOPATH/src/go.uber.org/multierr/. && \
+cp -rf $GOPATH/pkg/dep/sources/https---github.com-uber--go-zap/* $GOPATH/src/go.uber.org/zap/. && \
 mkdir -p $GOPATH/src/cloud.google.com/go && \
 cp -rf $GOPATH/pkg/dep/sources/https---github.com-googleapis-google--cloud--go/* $GOPATH/src/cloud.google.com/go/. && \
 mkdir -p $GOPATH/src/google.golang.org/api && \
